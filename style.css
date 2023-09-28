@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+/* font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; */
+
+/* font-family: 'Balsamiq Sans', cursive; */
+
+/* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Css Variables */
+
+:root{
+    --h1FontSize : 2.5rem;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+main{
+    max-width: 80vw;
+    margin: auto;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    box-shadow: 1px 1px 1px #645656;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    margin: 0px 27px;
+    list-style: none;
+    font-size: 18px;
+    transition: transform 0.2s ease-in;
+}
+
+#navbar ul li:hover{
+    transform: scale(1.05);
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: rgb(164, 164, 193);
+}
+
+#navbar .left {
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin: 0px 35px;
+}
+
+#navbar .right {
+    margin: 0px 35px;
+}
+
+.svg-parent{
+    position: absolute;
+    right: 18px;
+    top: 10px;
+    display: none;
+}
+
+.svg-parent svg{
+    font-size: 20px;
+    width: 33px;
+    height: 33px;
+}
+
+/* section 1 css */
+#home {
+    min-height: 75vh;
+    margin-bottom: 140px;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#home .leftside img {
+    width: 350px;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+.blue {
+    color: rgb(112, 112, 157);
+}
+
+.rightside {
+    font-size: 3.3rem;
+    line-height: 4rem;
+    position: relative;
+    bottom: 40px;
+}
+
+#element {
+    color: rgb(112, 112, 157);
+}
+
+/* About Section  */
+
+#about {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    /* border: 2px solid blue; */
+}
+
+#about .text h3 {
+    font-size: 1.4rem;
+    line-height: 1.75rem;
+    margin: 20px 0px;
+    font-weight: 400;
+}
+
+.text{
+    margin: 30px 0px;
+}
+
+#section3>h1 , #about > h1 , #section4 h1 , #contact h1{
+    font-size: var(--h1FontSize);
+    text-decoration: underline;
+}
+
+/* Projects section */
+
+#section3 {
+    margin-top: 200px;
+    /* border: 2px solid red; */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    box-sizing: border-box;
+}
+
+#projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(370px,1fr));
+    grid-gap: 20px;
+}
+
+.project-item {
+    margin: 20px 4px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(75, 85, 99) 0px 4px 6px -1px, rgb(75, 85, 99) 0px 2px 4px -2px;
+}
+
+.project-image img{
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in;
+}
+
+.project-image img:hover{
+    transform: scale(1.03);
+}
+
+#section3 > h2 , #section4 > h2 , #contact h2{
+    margin: 30px 0px;
+    font-weight: 400;
+    font-size: 1.38rem;
+}
+
+.demo {
+    margin: 10px 0px;
+    background: rgb(59, 130, 246);
+    color: rgb(219, 234, 254);
+    padding: 6px 19px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: 0 solid #e5e7eb;
+    border-radius: 0.2rem;
+}
+
+.demo a{
+    color: rgb(219, 234, 254);
+    text-decoration: none;
+}
+
+.bottom{
+    padding: 1rem;
+}
+
+.project-desc{
+    margin: 10px 0px;
+    height: 140px;
+    /* Agar content overflow kar raha hai to uspe y mai scrollbar add karne ke liye */
+    overflow-y: scroll; 
+}
+
+/* Below code chrome ke andar se agar koi element ka scrollbar remove karna hai but uske content ko scroll kiya jaaye */
+.project-desc::-webkit-scrollbar{  
+    display: none;
+}
+
+/* Below code firefox ke andar se koi element ka scroll baar hatane mai madat karta hai  */
+html{
+    scrollbar-width: none;
+}
+
+.project-desc{
+    scrollbar-width: none;
+    line-height: 1.54rem;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.project-title h2{
+    color: #8181df;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.6rem;
+}
+
+/* Skills Section CSS */
+
+#section4{
+    margin-top: 150px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#skills{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(375px,1fr));
+    grid-gap: 30px;
+}
+
+.iconBlock{
+    border-radius: 0.5rem;
+    padding: 15px 0px;
+    text-align: center;
+    transform: scale(1.04);
+    transition: transform 0.4s ease-in;
+    margin: 0px 12px;
+}
+
+.iconBlock:hover{
+    transform: scale(1.06);
+}
+
+.iconBlock img{
+    width: 5rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.iconBlock h3{
+    margin: 10px 0px;
+    font-size: 1.2rem;
+}
+
+/* Contact section CSS */
+
+#contact{
+    margin-top: 150px;
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+form div{
+    margin: 20px 0px;
+}
+
+form input, textarea{
+    background-color: initial;
+    color: white;
+    width: 100%;
+    border-radius: 6px;
+    padding: 9px 10px;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+form input:focus , textarea:focus{
+    outline: none;
+}
+
+.submit{
+    font-size: 1.2rem;
+    margin: 30px 0px;
+}
+
+.icons{
+    display: none;
+}
+
+.icons ul{
+    display: flex;
+    justify-content: center;
+}
+
+.icons ul li{
+    list-style: none;
+    margin: 17px 10px 0px 10px;
+}
+
+.icons svg{
+    color: white;
+}
+
+/* Footer Section  */
+
+footer{
+    text-align: center;
+    padding: 15px 0px;
+    margin-top: 100px;
+    font-size: 23px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    box-shadow: 0px -1px 8px gray;
+}
+
+
+/* Icons Link CSS */
+
+#iconsLink{
+    position: fixed;
+    left: 0;
+    top: 285px;
+    z-index: 100;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    cursor: pointer;
+}
+
+#iconsLink ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+#iconsLink ul li{
+    margin-left: -110px;
+    list-style: none;
+    width: 9rem;
+    height: 4.3rem;
+    transition: 0.3s;
+    background-color: rgb(107, 114, 128);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#iconsLink ul li:hover{
+    margin-left: unset;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#iconsLink svg{
+    color: white;
+    width: 32px;
+    height: 32px;
+}

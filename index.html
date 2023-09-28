@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+    <!-- Header section of the website -->
+    <header>
+        <nav id="navbar">
+            <div class="left display-none">Devender`s Portfolio</div>
+
+            <div class="right display-none">
+                <ul>
+                    <li><a href="#section1">Home</a></li>
+                    <li><a href="#section2">About</a></li>
+                    <li><a href="#section3">Projects</a></li>
+                    <li><a href="#section4">Skills</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="svg-parent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16" onclick="func()">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <!-- Home | which contains profile and little emperience -->
+        <section id="section1">
+
+            <div id="home">
+                <div class="leftside">
+                    <img src="img/bg3.png" alt="Profile">
+                </div>
+
+                <div class="rightside">
+                    Hi, My name is <span class="blue">Devender</span>
+                    <div>and I am a passionate</div>
+                    <span id="element"></span> <!-- Element to contain animated typing -->
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Left div which contains resume , linked in and github link  -->
+
+        <div id="iconsLink">
+            <ul>
+                <li style="border-top-right-radius: 6px;">
+                    <a href="https://www.linkedin.com/in/devender-bba156203/" target="_blank">
+                        LinkedIn
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                            height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Devender721" target="_blank">
+                        GitHub
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512"
+                            height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+                <li style="border-bottom-right-radius: 6px;">
+                    <a href="Devender(resume).pdf" download="Devender`s Resume">
+                        Resume
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="30"
+                            width="30" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- About section of the website  -->
+
+        <section id="section2">
+
+            <div id="about">
+                <h1>About</h1>
+                <div class="text1 text">
+                    <h3> Hello! I'm Devender, a passionate and creative Front-End Developer having Experience of 7+
+                        Front-End
+                        projects </h3>
+                </div>
+
+                <div class="text2 text">
+                    <h3>As a Front End Web developer, I enjoy tackling new challenges and continuously
+                        expanding my skillset.</h3>
+                </div>
+
+                <div class="text3 text">
+                    <h3>I have a passion for working with Html , Css , Javascript and have Experience of Django in
+                        backend
+                        and I am also interested in building new Web Technologies and Software.</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Projects section -->
+
+        <section id="section3">
+            <h1>Projects</h1>
+            <h2>Check out some of my work right here</h2>
+
+            <div id="projects">
+
+                <div class="project-item">
+                    <div class="project-image"><img src="projectImg/Hotstar-c.png" alt="" width="200px"></div>
+
+                    <div class="bottom">
+                        <div class="project-title">
+                            <h2>"StreamSync Entertainment Hub</h2>
+                        </div>
+
+                        <div class="project-desc">
+                            "StreamSync Entertainment Hub" is a comprehensive online platform that offers users a seamless and immersive experience for streaming music and watching movies and TV shows. This all-in-one entertainment destination is designed to cater to diverse tastes and preferences, providing a wide range of content options.
+                        </div>
+
+                        <button class="demo"><a href="https://github.com/Devender721/music-sites/blob/main/index.html"
+                                target="_blank">Demo</a></button>
+                    </div>
+
+                </div>
+
+                <div class="project-item">
+                    <div class="project-image"><img src="projectImg/Netflix-c.png" alt="" width="180px"></div>
+
+                    <div class="bottom">
+                        <div class="project-title">
+                            <h2>
+                                FlixStream
+                            </h2>
+                        </div>
+
+                        <div class="project-desc">
+                            "FlixStream" is an on-demand video streaming platform that brings an extensive library of movies, TV series, documentaries, and original content directly to users' screens. Inspired by the success of Netflix, "FlixStream" offers a similar user experience with a focus on providing top-notch entertainment.
+                        </div>
+
+                        <button class="demo"><a href="https://github.com/Devender721/Netflix-C/blob/main/index.html"
+                                target="_blank">Demo</a></button>
+                    </div>
+
+                </div>
+
+                <div class="project-item">
+                    <div class="project-image"><img src="projectImg/Landingpage.png" alt="" width="200px"></div>
+
+                    <div class="bottom">
+                        <div class="project-title">
+                            <h2>Landing Page</h2>
+                        </div>
+
+                        <div class="project-desc">
+                            A landing page is a crucial element of any website or online marketing campaign. It serves as the initial point of contact for visitors and is designed to capture their attention, convey a specific message, and encourage them to take a desired action. Here's a basic description of a landing page:
+                        </div>
+
+                        <button class="demo"><a href=""
+                                target="_blank">Demo</a></button>
+                    </div>
+
+                </div>
+
+                <div class="project-item">
+                    <div class="project-image"><img src="projectImg/calculator.png" alt="" width="200px"></div>
+
+                    <div class="bottom">
+                        <div class="project-title">
+                            <h2>Calculator</h2>
+                        </div>
+
+                        <div class="project-desc">
+                            reating a fully functional calculator involves a significant amount of code, and the specific code can vary depending on the programming language and platform you're using. 
+                        </div>
+
+                        <button class="demo"><a href=""
+                                target="_blank">Demo</a></button>
+                    </div>
+
+                </div>
+
+                <div class="project-item">
+                    <div class="project-image"><img src="projectImg/Imagememory.png" alt="" width="200px"></div>
+
+                    <div class="bottom">
+                        <div class="project-title">
+                            <h2>Image Memory Game</h2>
+                        </div>
+
+                        <div class="project-desc">
+                            The "Image Memory Game" is an engaging and entertaining project that offers users a classic memory game experience with a visual twist. It is designed to challenge and improve a player's memory and concentration skills while providing hours of fun.
+                        </div>
+
+                        <button class="demo"><a href="https://github.com/Devender721/IMAGE_MEMORY_GAME"
+                                target="_blank">Demo</a></button>
+                    </div>
+
+                </div>
+
+                <div class="project-item">
+                    <div class="project-image"><img src="projectImg/Portfolio.png" alt="" width="200px"></div>
+
+                    <div class="bottom">
+                        <div class="project-title">
+                            <h2>My Portfolio</h2>
+                        </div>
+
+                        <div class="project-desc">
+                            The "Personal Portfolio Website" is a digital showcase of your skills, achievements, and creative work. It serves as an online representation of your professional identity, allowing you to highlight your expertise, share your accomplishments, and connect with potential employers, clients, or collaborators.
+                        </div>
+
+                        <button class="demo"><a href=""
+                                target="_blank">Demo</a></button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Skills section  -->
+
+        <section id="section4">
+            <h1>Skills</h1>
+            <h2>These are the technologies I've worked with</h2>
+
+            <div id="skills">
+
+                <div class="iconBlock" style="box-shadow: 1px 3px 9px #f97316;">
+                    <img src="skillsIcon/HTML.png" alt="">
+                    <h3>HTML</h3>
+                </div>
+
+                <div class="iconBlock" style="box-shadow: 1px 3px 9px #3b82f6;">
+                    <img src="skillsIcon/CSS.png" alt="">
+                    <h3>CSS</h3>
+                </div>
+
+                <div class="iconBlock" style="box-shadow: 1px 3px 9px #eab308;">
+                    <img src="skillsIcon/JS.png" alt="">
+                    <h3>Javascript</h3>
+                </div>
+
+                <div class="iconBlock" style="box-shadow: 1px 3px 9px #818cf8;">
+                    <img src="skillsIcon/bootstrap.png" alt="">
+                    <h3>Bootstrap</h3>
+                </div>
+
+                <div class="iconBlock" style="box-shadow: 1px 3px 9px #9db2cf;">
+                    <img src="skillsIcon/Django.png" alt="">
+                    <h3>Django</h3>
+                </div>
+
+                <div class="iconBlock" style="box-shadow: 1px 3px 9px #f97316;">
+                    <img src="skillsIcon/git.png" alt="">
+                    <h3>Git</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Contact Section  -->
+
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <h2>Submit the form below to get in touch with me</h2>
+
+            <form>
+                <div class="name">
+                    <input type="text" placeholder="Enter your Name" class="nameInput">
+                </div>
+
+                <div class="email">
+                    <input type="text" placeholder="Enter your Email" class="emailInput">
+                </div>
+
+                <div class="message">
+                    <textarea cols="30" rows="10" placeholder="Enter your Message" class="messageInput"></textarea>
+                </div>
+
+                <button class="submit demo" onclick="formSubmit()">Submit</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            Copyright &copy; All Right Reserved
+
+            <div class="icons">
+                <ul>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/om-kumar-6027a0224/" target="_blank">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                                height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/omkumarjha" target="_blank">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512"
+                                height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="omkumarjha_Resume.pdf" download="Om'sResume">
+
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="30"
+                                width="30" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- issse hum typejs ko include karte hai .-->
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['FrontEnd Developer', 'Problem Solver', 'Django Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+<script src="index.js"></script>
+
+</html>
